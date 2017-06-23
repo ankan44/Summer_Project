@@ -1,0 +1,39 @@
+// Place all the styles related to the Iqtest controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.test
+{
+
+  font-style: italic;
+  font-size: large;
+  color: rgba(206, 23, 24, 0.89);
+  text-shadow: 2px 2px #fbf7fb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+.back
+{
+  height: 200px;
+  width: 400px;
+  position: relative;
+  top: 15%;
+  left: 20%;
+  margin-top: -100px;
+  margin-left: -200px;
+  color: #000;
+  }
+.title
+{
+
+  font-style: italic;
+  font-size: xx-large;
+  color: rgba(206, 23, 24, 0.89);
+  text-shadow: 2px 2px #fbf7fb;
+  position:relative;
+  top: 45%;
+  left: 36%;
+}

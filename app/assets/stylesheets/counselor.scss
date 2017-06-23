@@ -1,0 +1,52 @@
+.cow
+{
+
+  font-style: italic;
+  color: #fbf7fb;
+  font-size: x-large;
+  position: fixed; /* or absolute */
+  top: 220px;
+  left: 470px;
+  text-shadow: 2px 2px #000000
+}
+// Place all the styles related to the counselor controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.kill
+{
+  position: fixed; /* or absolute */
+  top: 500px;
+  left: 665px;
+  font-size: large;
+
+}
+a:link{
+  color:white;
+
+}
+a:visited{
+  color:white;
+
+}
+a:hover{
+  color:red;
+}
+.tata
+{
+  position: relative; /* or absolute */
+  top: 220px;
+  left: 600px;
+  font-style: italic;
+  color: #BBBBBB;
+  font-size: large;
+  //text-shadow: 4px 4px #000000;
+
+
+}
+.merc
+  {
+  position: fixed; /* or absolute */
+  top: 20px;
+  left: 50px;
+
+}

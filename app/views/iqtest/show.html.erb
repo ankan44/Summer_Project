@@ -1,0 +1,137 @@
+
+<body class="test" background="http://www.tomtate.net/BOOK_WITH_TAN_BACKGROUND.jpg">
+<br>
+<h class="title"> <b>I.Q TEST </b>  </h> <br>
+<br>
+<label>QUESTION-1: From these 4 words, pick the odd one out :</label>
+  <%= form_tag("/home/new",controller: "home", method: "new") %>
+  <% [ 'Canberra', 'Vienna', 'Madrid', 'New-York' ].each do |theme| %>
+      <br><%= radio_button_tag :theme, theme, @theme == theme %> </br>
+      <%= theme.humanize %>
+<% end %>
+<br>
+<br>
+<br>
+<div>
+  <label>QUESTION-2: Which number complete the following series:      144 121 100 81 64 ?  </label>
+  <%= form_tag("/home/new",controller: "home", method: "new") %>
+  <% [ '16', '36', '49', '216' ].each do |themee| %>
+      <br><%= radio_button_tag :themee, themee, @themee == themee %> </br>
+      <%= themee.humanize %>
+  <% end %>
+</div>
+<br>
+<br>
+<div>
+    <label>QUESTION-3: Forest is to tree as tree is to ?</label>
+  <%= form_tag("/home/new",controller: "home", method: "new") %>
+  <% [ 'plant', 'leaf', 'branch', 'mangrove' ].each do |them| %>
+      <br><%= radio_button_tag :them, them, @them == them %> </br>
+      <%= them.humanize %>
+      </div>
+  <% end %>
+  <div>
+    <br>
+    <br>
+    <label>QUESTION-4: 6121135 is to flame as 21215120 is to ?</label>
+    <%= form_tag("/home/new",controller: "home", method: "new") %>
+    <% [ 'voice', 'bald', 'boat', 'castle' ].each do |the| %>
+        <br><%= radio_button_tag :the, the, @the == the %> </br>
+        <%= the.humanize %>
+        </div>
+    <% end %>
+     <div>
+    <br>
+    <br>
+       <label>QUESTION-5: The day after the day after tomorrow is four days before Monday. What day is it today?</label>
+    <%= form_tag("/home/new",controller: "home", method: "new") %>
+    <% [ 'Monday', 'Thursday', 'Friday', 'Tuesday' ].each do |th| %>
+        <br><%= radio_button_tag :th, th, @th == th %> </br>
+        <%= th.humanize %>
+        </div>
+    <% end %>
+
+    <div>
+    <br>
+    <br>
+      <label>QUESTION-6: At a conference, 12 members shook hands with each other before & after the meeting.<br>
+       How many total number of hand shakes occurred?</label>
+
+    <%= form_tag("/home/new",controller: "home", method: "new") %>
+    <% [ '100', '132', '133', '123' ].each do |demo| %>
+        <br><%= radio_button_tag :demo, demo, @demo == demo %> </br>
+        <%= demo.humanize %>
+         </b>
+         </div>
+
+     <% end %>
+
+
+
+
+        <div>
+          <br>
+          <br>
+          <label>QUESTION-7: “Pig is to pork” as “Cow is to _____”: </label>
+          <%= form_tag("/home/new",controller: "home", method: "new") %>
+          <% [ 'Lamb', 'Beef', 'Cattle', 'Stew' ].each do |mod| %>
+              <br><%= radio_button_tag :mod, mod, @mod == mod %> </br>
+              <%= mod.humanize %>
+              </div>
+          <% end %>
+
+          <div>
+            <br>
+            <br>
+            <label>QUESTION-8: The following series of numbers contains one number that does not fit the pattern set by the others.<br>
+              What number does not fit?  3, 5, 7, 11, 14, 17</label>
+            <%= form_tag("/home/new",controller: "home", method: "new") %>
+            <% [ '3', '7', '11', '14' ].each do |modu| %>
+                <br><%= radio_button_tag :modu, modu, @modu == modu %> </br>
+                <%= modu.humanize %>
+                </div>
+            <% end %>
+
+            <div>
+              <br>
+              <br>
+              <label>QUESTION-9: If you have a cube which is 5m x 5m x 5m, what is the cubic metres this container would hold? </label>
+              <%= form_tag("/home/new",controller: "home", method: "new") %>
+              <% [ '125 cubic metres', '120 cubic metres', '25 cubic metres', '225 cm' ].each do |modue| %>
+                  <br><%= radio_button_tag :modue, modue, @modue == modue %> </br>
+                  <%= modue.humanize %>
+                  </div>
+              <% end %>
+
+              <div>
+                <br>
+                <br>
+                <label>QUESTION-10: If it takes 2 hours to drive to City A and the city is 120km away,<br>
+                  what speed was the vehicle travelling at?</label>
+                <%= form_tag("/home/new",controller: "home", method: "new") %>
+                <% [ '60km/hr', '100km/hr', '80km/hr', '40km/hr' ].each do |moduo| %>
+                    <br><%= radio_button_tag :moduo, moduo, @moduo == moduo %> </br>
+                    <%= moduo.humanize %>
+                    </div>
+                <% end %>
+                <br>
+                <br>
+                <%= submit_tag("See your answers") %>
+                <a class= "back" href="http://localhost:3000">Back</a>
+                </div>
+                <div id="pie_to_be"></div>
+                <style>
+                  div#pie_to_be { width: 50px; height: 50px; position: fixed; top:10px; right:10px; margin: 15px; color:#444444; font-family:arial; font-size:32px; }
+                </style>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+                <script>
+                    var myseconds = 600;
+                    var mycolor = 'rgba(255, 100, 0, 0.8)';
+                    alert('You will have '+Math.floor(myseconds/60)+' minutes and '+myseconds%60+' seconds to finish. Remember if time passes your answers will not be accepted. You will be redirected to quiz page  Press “OK” to begin.'); $(function(){ $('div#pie_to_be').pietimer({ seconds: myseconds, color: mycolor }, function(){ $('#caspioform').submit(); });}); (function($){jQuery.fn.pietimer=function(options,callback){var settings={'seconds':10,'color':'rgba(255, 255, 255, 0.8)','height':this.height(),'width':this.width()};if(options){$.extend(settings,options);}this.html('<canvas id="pie_timer" width="'+settings.height+'" height="'+settings.height+'">'+settings.seconds+'</canvas>');var val=360;interval=setInterval(timer,40);function timer(){var canvas=document.getElementById('pie_timer');if(canvas.getContext){val-=(360/settings.seconds)/24;if(val<=0){clearInterval(interval);canvas.width=canvas.width;if(typeof callback=='function'){callback.call();}}else{canvas.width=canvas.width;var ctx=canvas.getContext('2d');var canvas_size=[canvas.width,canvas.height];var radius=Math.min(canvas_size[0],canvas_size[1])/2;var center=[canvas_size[0]/2,canvas_size[1]/2];ctx.beginPath();ctx.moveTo(center[0],center[1]);var start=(3*Math.PI)/2;ctx.arc(center[0],center[1],radius,start-val*(Math.PI/180),start,false);ctx.closePath();ctx.fillStyle=settings.color;ctx.fill();}}}return this;};})(jQuery); var isMSIE = /*@cc_on!@*/0; if(isMSIE){function ticker(){document.getElementById('pie_to_be').innerHTML=parseInt(document.getElementById('pie_to_be').innerHTML)-1;} setInterval("ticker()",1000);}
+                    window.setTimeout(function() {
+                        window.location.href = '/iqtest/show';
+                    }, 601000);
+                </script>
+
+
+                </body>

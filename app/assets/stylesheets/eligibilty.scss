@@ -1,0 +1,101 @@
+// Place all the styles related to the Eligibilty controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.croc
+{
+  background: url("https://s.smore.com/fr/books.18ceefdb.jpg");
+  position: fixed;
+  background-size: cover;
+  left: 460px;
+  top: 200px;
+  border: 100px;
+  text-shadow: 2px 2px 4px #d4313b;
+  border: 2px solid #fbf7fb;
+  box-shadow:8px 8px #000000;
+  padding: 25px;
+}
+
+
+
+.Tiger
+{
+  font-family: Arial;
+  font-style: italic;
+  color: #330619;
+
+}
+.lion
+{
+  font-family: Arial;
+  font-style: italic;
+  color: #2c0b10;
+  }
+.deer
+{
+  font-family: Arial;
+  font-style: italic;
+  color: #2a0b11;
+
+}
+.dog
+{
+  background: url("https://s.smore.com/fr/books.18ceefdb.jpg");
+  background-size: cover;
+  font-family: Arial;
+  font-style: italic;
+  color: #2c0b10;
+  font-size: larger;
+  }
+.cat
+{
+
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 60%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+
+  }
+.adjust {
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+  }
+.her
+{
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 70%;
+  left: 75%;
+  margin-top: -100px;
+  margin-left: -200px;
+
+}
+.his
+{
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.home
+{
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  margin-top: -100px;
+  margin-left: -200px;
+  color: #000;
+}

@@ -1,0 +1,18 @@
+<body background=" https://af-production.s3.amazonaws.com/photos/images/76458/original/books.jpg">
+<div class="tata">
+<%=form_for @msg ,url: counselor_new_path do  |msg| %>
+      <p><b> Please enter your name.</b> </p>
+    <%= msg.text_field :name %>
+    <p><b> Please enter your email id.</b> </p>
+    <%= msg.text_field :email_id %>
+    <p><b> Please enter your query.</b></p>
+    <%= msg.text_area  :query %><br>
+
+    <%= msg.submit "Submit"%>
+<% end %>
+</div>
+<div class="merc">
+  <a href="/index/index"><b>Home</b></a>
+  <a href="/eligibilty/new"><b>Eligibility</b></a>
+  </div>
+</body>

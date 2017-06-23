@@ -1,0 +1,19 @@
+
+<body class="croc">
+<h1 class="Tiger">
+                                                 Eligibility
+</h1>
+<h2 class="lion">
+Please enter given details.
+   <a class="home" href="http://localhost:3000">Home</a>
+</h2>
+<h3 class="deer"><%= form_tag("/el/index",controller: "el", method: "index") do %>
+    <p> Name of exam(SRM/Manipal/Mains)</p>
+    <%= text_field_tag :fname %>
+    <p> Your Marks/Rank</p>
+    <%= text_field_tag :lname %>
+    <%= submit_tag "submit" %>
+<% end %>
+</h3>
+
+</body>
